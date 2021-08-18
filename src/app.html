@@ -1,0 +1,9 @@
+<template>
+	<template for:each={trackDead} for:item="selectedItem">
+		<template for:each={selectedItem.value} for:item="val" for:index="index">
+			<span key={val}>
+         <lightning-pill  onremove={handleRemove} label={val} name={val} data-item={val}> </lightning-pill>&nbsp;
+   </span>
+		</template>
+	</template>
+</template>
